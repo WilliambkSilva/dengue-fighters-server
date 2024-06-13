@@ -2,7 +2,7 @@ import { Sequelize } from "sequelize"
 
 const database = 'df_database'
 const username = 'root'
-const password = 'admin'
+const password = 'willie'
 
 
 const sequelize = new Sequelize(database, username, password, {
