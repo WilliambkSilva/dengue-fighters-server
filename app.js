@@ -1,6 +1,7 @@
 import express from 'express'
 import createUser from './routes/createUser.js'
 import authLogin from './routes/login.js'
+import createEvent from './routes/createEvent.js'
 import cors from 'cors'
 
 const app = express()
@@ -10,6 +11,7 @@ app.use(express.json())
 app.use(cors({ origin: '*' }));
 app.use('/createuser', createUser)
 app.use('/login', authLogin)
+app.use('/createevent', createEvent)
 
 
 
