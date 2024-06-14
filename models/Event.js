@@ -21,4 +21,6 @@ const Event = database.define('Event', {
     eventDescription: DataTypes.STRING
   });
 
+Event.belongsTo(User, { foreignKey: 'creatorUser', as: 'creator' });
+
 export default Event
